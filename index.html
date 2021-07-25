@@ -5,11 +5,335 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Turismo NS</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
 
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Navbar brand -->
+                <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                    <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="15" alt=""
+                        loading="lazy" />
+                </a>
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                </ul>
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+
+
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+    <div class="container">
+        <div class="row d-flex justify-content-center pb-4">
+            <div class="col-lg-6 align-self-center">
+                <img class="rounded mx-auto d-block img-fluid" src="img/mapa rojo.png" alt="" name="map">
+            </div>
+            <div class="col-lg-6 align-self-center" id="mapside">
+                <!-- Card -->
+                <div class="card" id="inicio">
+                    <!-- Card image -->
+                    <!--<img class="card-img-top img-fluid" src="images/image1.jpg" alt="Card image cap">-->
+
+                    <!-- Card content -->
+                    <div class="card-body">
+
+                        <!-- Title -->
+                        <h4 class="card-title text-center">Pamplona</h4>
+                        <!-- Text -->
+                        <p class="card-text text-justify" style="font-size: 13px;">Pamplona es un municipio Colombiano,
+                            ubicado en el departamento de Norte de Santander, es la capital de la Provincia de Pamplona
+                            y su economía está basada en la gastronomía, la agricultura, el turismo (especialmente el
+                            turismo cultural religioso) y la educación. Se le conoce como la "Ciudad Mitrada", debido a
+                            que en ella se instauró la Arquidiócesis de Nueva Pamplona, la primera diócesis católica de
+                            la región nororiental del país. La Universidad de Pamplona, destacada universidad pública de
+                            la región, tiene su sede principal en la ciudad. <br>
+                            En este sentido en el desarrollo del siguiente objetivo específico se actualizó la
+                            información del tomo II del diseño del producto turístico de Norte de Santander debido a que
+                            la información plasmada en el documento tiene seis años de antigüedad; este tomo refleja dos
+                            rutas del microcluster de Pamplona, en esta investigación, se hace énfasis a Pamplona de
+                            forma general para que las personas que desean conocer los sitios turísticos del municipio
+                            visibilicen la oferta que brinda en los diferentes sectores comerciales de forma dinámica y
+                            sencilla.
+                        </p>
+
+                        <!--						<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Button</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <!-- Pills navs -->
+                <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="ex1-tab-1" data-mdb-toggle="pill" href="#ex1-pills-1" role="tab"
+                            aria-controls="ex1-pills-1" aria-selected="true">Museos <i class="fas fa-landmark"></i></a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="ex1-tab-2" data-mdb-toggle="pill" href="#ex1-pills-2" role="tab"
+                            aria-controls="ex1-pills-2" aria-selected="false">Iglesias <i class="fas fa-church"></i></a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="ex1-tab-3" data-mdb-toggle="pill" href="#ex1-pills-3" role="tab"
+                            aria-controls="ex1-pills-3" aria-selected="false">Folclore <i
+                                class="fas fa-rainbow"></i></a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="ex1-tab-4" data-mdb-toggle="pill" href="#ex1-pills-4" role="tab"
+                            aria-controls="ex1-pills-4" aria-selected="false">Espacios Urbanos <i
+                                class="fas fa-map-marked-alt"></i></a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="ex1-tab-5" data-mdb-toggle="pill" href="#ex1-pills-5" role="tab"
+                            aria-controls="ex1-pills-5" aria-selected="false">Espacios de Ocio <i
+                                class="fas fa-glasses"></i></a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="ex1-tab-6" data-mdb-toggle="pill" href="#ex1-pills-6" role="tab"
+                            aria-controls="ex1-pills-6" aria-selected="false">Ecoturismo <i class="fas fa-tree"></i></a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="ex1-tab-7" data-mdb-toggle="pill" href="#ex1-pills-7" role="tab"
+                            aria-controls="ex1-pills-7" aria-selected="false">Hoteles <i class="fas fa-hotel"></i></a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="ex1-tab-8" data-mdb-toggle="pill" href="#ex1-pills-8" role="tab"
+                            aria-controls="ex1-pills-8" aria-selected="false">Restaurantes <i
+                                class="fas fa-utensils"></i></a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="ex1-tab-9" data-mdb-toggle="pill" href="#ex1-pills-9" role="tab"
+                            aria-controls="ex1-pills-9" aria-selected="false">Transporte Terrestre <i
+                                class="fas fa-bus"></i></a>
+                    </li>
+                </ul>
+                <!-- Pills navs -->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Pills content -->
+            <div class="tab-content" id="ex1-content">
+                <div class="tab-pane fade show active" id="ex1-pills-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+                    <h1 class="text-center"><b>Museos</b></h1>
+                    <div class="row justify-content-center mb-4">
+                        <div class="col-md-8">
+                            <p>Los museos se han constituido como espacios donde se protege la memoria y aquellas
+                                manifestaciones artísticamente valiosas y con historia, según el ICT (2018); por lo
+                                anterior, cabe mencionar que Pamplona es un referente cultural e histórico de Colombia,
+                                que cuenta con numerosos espacios expositivos que van desde el arte de lo histórico y
+                                religioso hasta lo moderno, salvando material etnográficos, arqueológicos y
+                                paleontológico que sirven para contar algunos sucesos de la época colonial y
+                                precolombina.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="border-bottom pb-4 mb-5">
+                        <div class="row gx-5">
+                            <div class="col-md-4 mb-4">
+                                <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5"
+                                    data-mdb-ripple-color="light">
+                                    <img src="img/museo1.png" class="img-fluid">
+                                    <a href="#!">
+                                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-8 mb-4">
+                                <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3 d-none">News of the
+                                    day</span>
+                                <h4><strong>CASA MUSEO ÁGUEDA GALLARDO DE VILLAMIZAR</strong></h4>
+
+                                <p class="text-muted content">
+                                    La Casa Museo Agueda Gallado de Villamizar es un bien de interés cultural para
+                                    Pamplona
+                                    porque simbolizó dos hechos históricos; primero por el hecho de que fue construida
+                                    recién pasado el terremoto que sufrió la ciudad de Pamplona en 1.644 y segundo
+                                    porque en
+                                    ella vivió Maria Agueda Gallardo Guerrero, una de las mujeres más importantes para
+                                    la
+                                    historia de Colombia, por ser precursora de la Independencia del país, cabe destacar
+                                    que
+                                    en esta casa se reunían los criollos residentes de la ciudad a leer y discutir “los
+                                    Derechos del Hombre y del Ciudadano” y “el Contrato Social” de Rousseau que había
+                                    dejado
+                                    intencionalmente el general Antonio Nariño, también era centro de tertulias de
+                                    políticas
+                                    previas a la Independencia y donde se reunieron el 04 de junio de 1.810 el primer
+                                    grupo
+                                    conspirador que planteó para dar el primer grito de independencia de Colombia.<br>
+                                    El Ministerio de Cultura le dio el comodato de la Casa Museo Agueda a la
+                                    Universidad
+                                    de
+                                    Pamplona, con el fin de generar conocimientos y fortalecer los espacios
+                                    tecnológicos
+                                    para que siga siendo motor de desarrollo académico y tecnológico, y preste sus
+                                    servicios
+                                    a la comunidad mediante actividades culturales para que las personas a través de
+                                    su
+                                    participación se apropien, disfruten y adquieran una identidad cultural y
+                                    educativa,
+                                    la
+                                    Casa posee capacidad instalada de 80 equipos de cómputo con conexión a Internet
+                                    para
+                                    uso
+                                    de estudiantes y docentes de la universidad. <br>
+                                    La Casa Museo Agueda se ubica en la esquina de la calle 5 con carrera 5, brinda
+                                    servicio
+                                    de atención de lunes a viernes de 8:00 a.m a 12:00 del mediodía y de 2:00 p.m a
+                                    6
+                                    p.m,
+                                    el valor de entrada es y se puede comunicar al telefono 5686394 y el email
+                                    casaagueda@unipamplona.edu.co.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom pb-4 mb-5">
+                        <div class="row gx-5">
+                            <div class="col-md-4 mb-4">
+                                <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5"
+                                    data-mdb-ripple-color="light">
+                                    <img src="img/museo2.png" class="img-fluid">
+                                    <a href="#!">
+                                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-8 mb-4">
+                                <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3 d-none">News of the
+                                    day</span>
+                                <h4><strong>MUSEO ARQUIDIOCESANO DE ARTE RELIGIOSO</strong></h4>
+
+                                <p class="text-muted content">
+                                    El Museo Arquidiocesano de Arte Religioso fue fundado en 1990, con la misión de
+                                    proteger
+                                    y conservar el patrimonio artístico y cultural de Pamplona, juntando una colección
+                                    de
+                                    600 piezas religiosas en las que se encuentran ornamentos del siglo XIX, platería de
+                                    piezas religiosas de gran significado, pinturas, esculturas, orfebrería, entre
+                                    otros,
+                                    preservados desde la fundación de Pamplona hasta nuestros días, este museo es
+                                    visitado
+                                    especialmente en época de Semana Santa y cuenta con tres salas de exhibición
+                                    categorizadas por épocas y escuelas, distribuidas en dos pisos, en el primer piso se
+                                    encuentran las pinturas sobre Cristología, Santos, Santas, Postrimerías, Angeología,
+                                    Iconografías de Dios y tallas en madera, y en el segundo piso exhibe la platería y
+                                    ornamentacion. <br>
+                                    El Museo se encuentra ubicado en el Palacio Arzobispal en la carrera 5 # 4-87 y
+                                    brinda
+                                    su servicio de lunes a sábados de 10 a.m. a 12 del mediodía y de 3 p.m. a 5 p.m, y
+                                    los
+                                    domingos de 10 a.m. a 12 del mediodía, a excepción de los martes que no presta
+                                    servicio,
+                                    por un valor de $ 3.000 pesos colombianos la entrada, tambien se puede contactar a
+                                    traves del telefono 5681814 - 3144426719 y el email vicariapastoralpam@gmail.com.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="tab-pane fade" id="ex1-pills-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                    Tab 2 content
+                </div>
+                <div class="tab-pane fade" id="ex1-pills-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                    Tab 3 content
+                </div>
+                <div class="tab-pane fade" id="ex1-pills-4" role="tabpanel" aria-labelledby="ex1-tab-4">
+                    Tab 4 content
+                </div>
+                <div class="tab-pane fade" id="ex1-pills-5" role="tabpanel" aria-labelledby="ex1-tab-5">
+                    Tab 5 content
+                </div>
+                <div class="tab-pane fade" id="ex1-pills-6" role="tabpanel" aria-labelledby="ex1-tab-6">
+                    Tab 6 content
+                </div>
+                <div class="tab-pane fade" id="ex1-pills-7" role="tabpanel" aria-labelledby="ex1-tab-7">
+                    Tab 7 content
+                </div>
+                <div class="tab-pane fade" id="ex1-pills-8" role="tabpanel" aria-labelledby="ex1-tab-8">
+                    Tab 8 content
+                </div>
+                <div class="tab-pane fade" id="ex1-pills-9" role="tabpanel" aria-labelledby="ex1-tab-9">
+                    Tab 9 content
+                </div>
+            </div>
+            <!-- Pills content -->
+        </div>
+    </div>
+    </div>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            var maxL = 1000;
+            $('.content').each(function () {
+                var text = $(this).html();
+                if (text.length > maxL) {
+                    var begin = text.substr(0, maxL),
+                        end = text.substr(maxL);
+                    $(this).html(begin)
+                        //.append($('<a class="readmore"/>').attr('href', '#').html('read more...'))
+                        .append($('<span class="hidden" />').html(end))
+                        .after("<button type='button' class='btn btn-primary readmorexd'>MOSTRAR MAS</button>");
+
+                }
+            });
+            $(document).on('click', '.readmorexd', function () {
+                // $(this).next('.readmore').fadeOut("400");
+                $(this).text(function (i, text) {
+                    return text === "MOSTRAR MAS" ? "MOSTRAR MENOS" : "MOSTRAR MAS";
+                });
+                //var add = $(this).prev().children('.hidden').text();
+                $(this).prev().children('.hidden').slideToggle(400);
+                //$(this).prev().append(add).html;
+                //console.log(add);
+            })
+        })
+    </script>
 </body>
 
 </html>
