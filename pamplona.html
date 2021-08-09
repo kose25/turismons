@@ -3572,7 +3572,8 @@
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
     <script>
-        $(function () {
+        document.addEventListener("turbolinks:load", function () {
+            $(function () {
             var maxL = 1000;
             $('.content').each(function () {
                 var text = $(this).html();
@@ -3605,6 +3606,8 @@
                 $(this).parent().parent().next().children().eq(1).attr("id", "tarifa" + index);
             });
         })
+        })
+        
     </script>
     <script>
         //Get the button
