@@ -12,15 +12,16 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js"
         integrity="sha512-G3jAqT2eM4MMkLMyQR5YBhvN5/Da3IG6kqgYqU9zlIH4+2a+GuMdLb5Kpxy6ItMdCfgaKlo2XFhI0dHtMJjoRw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <!-- MDB -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
-
     <link rel="stylesheet" href="css/style.css">
+    <meta name="turbolinks-cache-control" content="no-cache">
+
 </head>
 
 <body>
@@ -38,7 +39,7 @@
             <!-- Collapsible wrapper -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Navbar brand -->
-                <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
                     <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="15" alt=""
                         loading="lazy" />
                 </a>
@@ -3556,7 +3557,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="ex1-pills-8" role="tabpanel" aria-labelledby="ex1-tab-8">
-                    Tab 8 content
+
                 </div>
                 <div class="tab-pane fade" id="ex1-pills-9" role="tabpanel" aria-labelledby="ex1-tab-9">
                     Tab 9 content
@@ -3572,7 +3573,71 @@
     </button>
 
 
-    <script type="text/javascript" src="js/script.js"></script>
+    <script>
+
+        console.log('hi');
+        //Get the button
+        var mybutton = document.getElementById("btn-back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        $(function () {
+            var maxL = 1000;
+            $('.content').each(function () {
+                var text = $(this).html();
+                if (text.length > maxL) {
+                    var begin = text.substr(0, maxL),
+                        end = text.substr(maxL);
+                    $(this).html(begin)
+                        //.append($('<a class="readmore"/>').attr('href', '#').html('read more...'))
+                        .append($('<span class="hidden" />').html(end))
+                        .after("<button type='button' class='btn btn-primary readmorexd'>MOSTRAR MAS</button>");
+
+                }
+            });
+            $(document).on('click', '.readmorexd', function () {
+                console.log('dio click');
+                // $(this).next('.readmore').fadeOut("400");
+                $(this).text(function (i, text) {
+                    return text === "MOSTRAR MAS" ? "MOSTRAR MENOS" : "MOSTRAR MAS";
+                });
+                //var add = $(this).prev().children('.hidden').text();
+                $(this).prev().children('.hidden').slideToggle(400);
+                //$(this).prev().append(add).html;
+                //console.log(add);
+            });
+            $('.location').each(function (index) {
+                $(this).attr("href", "#collapseExample" + index);
+                $(this).parent().parent().next().children().first().attr("id", "collapseExample" + index);
+            });
+            $('.hotel').each(function (index) {
+                $(this).attr("href", "#tarifa" + index);
+                $(this).parent().parent().next().children().eq(1).attr("id", "tarifa" + index);
+            });
+        })
+    </script>
+
 </body>
 
 </html>
