@@ -3616,7 +3616,10 @@
 
                 }
             });
-            $(document).on('click', '.readmorexd', function () {
+            $(document).on('click', '.readmorexd', function (evt) {
+                evt.stopPropagation();
+                evt.preventDefault();
+                evt.stopImmediatePropagation();
                 console.log('dio click');
                 // $(this).next('.readmore').fadeOut("400");
                 $(this).text(function (i, text) {
