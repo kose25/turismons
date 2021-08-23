@@ -3888,33 +3888,26 @@
             var id = $(this).attr('id');
             $('.modal-title').text("Menu " + id);
             id = id.toUpperCase();
-            menu(id);
+            /////////////////
+            var url = document.getElementById("File_URL");
+            var output = document.getElementById("output");
+            var http = new XMLHttpRequest();
+            $('.carousel-inner').empty();
+            var text = "";
+            for (var i = 1; ; i++) {
+                url = "img/" + id + "/" + id + " CARTA " + i + ".jpg";
+                http.open('HEAD', url, false);
+                http.send();
+                if (http.status === 200) {
+                    $('.carousel-inner').append("<div class='carousel-item'><img src='img/" + id + "/" + id + " CARTA " + i + ".jpg" + "' class='d-block w-100' alt='...' /></div>");
+                } else {
+                    break;
+                }
+            }
+            //$('.carousel-inner').append(text);
+            $('.carousel-item').first().addClass("active");
 
         });
-
-        function menu(id) {
-            var rx = 0;
-            var m = 0;
-            var text = "";
-            $('.carousel-inner').empty();
-            do {
-                m++;
-                $.ajax({
-                    url: "img/" + id + "/" + id + " CARTA " + m + ".jpg",
-                })
-                    .done(text += "<div class='carousel-item'><img src='img/" + id + "/" + id + " CARTA " + m + ".jpg" + "' class='d-block w-100' alt='...' /></div>")
-                    .fail(function () {
-                        return false;
-                    })
-                console.log(rx);
-            } while (m < 5);
-            $('.carousel-inner').append(text);
-
-            console.log("el texto es: " + text);
-            console.log("el valor de rx es: " + rx);
-
-            $('.carousel-item').first().addClass("active");
-        }
     </script>
 
 </body>
