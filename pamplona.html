@@ -3629,10 +3629,10 @@
                                                             <td>Barrio Mirador de Cristo, Manzana C, Lote 7</td>
                                                             <td>3203037900</td>
                                                             <td><button type="button" class="btn btn-primary menu"
-                                                                data-mdb-toggle="modal" data-mdb-target="#menumodal"
-                                                                id="eco-tarantin">
-                                                                Ver Menu
-                                                            </button></td>
+                                                                    data-mdb-toggle="modal" data-mdb-target="#menumodal"
+                                                                    id="eco-tarantin">
+                                                                    Ver Menu
+                                                                </button></td>
                                                         </tr>
                                                         <tr>
                                                             <td>El Norteño</td>
@@ -3886,34 +3886,35 @@
 
         $('.menu').click(function () {
             var id = $(this).attr('id');
-            $('.modal-title').text("Menu "+ id);
-            id = id.toUpperCase();            
-            $.ajax({
-                url: "img/" + id,
-                success: function (data) {
-                    var count = 0;
-                    $(data).find("a:contains(.jpg)").each(function () {
-                        count++;
-                        if (count == 1) {
-                            $('.carousel-inner').html("<div class='carousel-item active'><img src='img/" + id + "/" + id + " CARTA " + count + ".jpg" + "' class='d-block w-100' alt='...' /></div>");
-                        }
-                        $('.carousel-inner').append("<div class='carousel-item'><img src='img/" + id + "/" + id + " CARTA " + count + ".jpg" + "' class='d-block w-100' alt='...' /></div>");
-                    });
-                    console.log(count);
-                }
-            });
+            $('.modal-title').text("Menu " + id);
+            id = id.toUpperCase();
+            menu(id);
+
         });
 
-        $.ajax({
-            url: "img/",
-            success: function (data) {
-                var count = 0;
-                $(data).find("a:contains(.png)").each(function () {
-                    count++;
-                });
-                console.log(count);
-            }
-        });
+        function menu(id) {
+            var rx = 0;
+            var m = 0;
+            var text = "";
+            $('.carousel-inner').empty();
+            do {
+                m++;
+                $.ajax({
+                    url: "img/" + id + "/" + id + " CARTA " + m + ".jpg",
+                })
+                    .done(text += "<div class='carousel-item'><img src='img/" + id + "/" + id + " CARTA " + m + ".jpg" + "' class='d-block w-100' alt='...' /></div>")
+                    .fail(function () {
+                        return false;
+                    })
+                console.log(rx);
+            } while (m < 5);
+            $('.carousel-inner').append(text);
+
+            console.log("el texto es: " + text);
+            console.log("el valor de rx es: " + rx);
+
+            $('.carousel-item').first().addClass("active");
+        }
     </script>
 
 </body>
