@@ -12,15 +12,12 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
-    <!-- MDB -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js"
-        integrity="sha512-G3jAqT2eM4MMkLMyQR5YBhvN5/Da3IG6kqgYqU9zlIH4+2a+GuMdLb5Kpxy6ItMdCfgaKlo2XFhI0dHtMJjoRw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+
     <link rel="stylesheet" href="css/style.css">
-    <meta name="turbolinks-cache-control" content="no-cache">
 
 </head>
 
@@ -46,7 +43,7 @@
                 <!-- Left links -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Dashboard</a>
+                        <a class="nav-link" href="sample.html">Sample</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Team</a>
@@ -3557,6 +3554,214 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="ex1-pills-8" role="tabpanel" aria-labelledby="ex1-tab-8">
+                    <!-- Pills navs -->
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="nav flex-column nav-pills text-center" id="v-pills-tab" role="tablist"
+                                aria-orientation="vertical">
+                                <a class="nav-link active" id="v-pills-home-tab" data-mdb-toggle="pill"
+                                    href="#v-pills-1" role="tab" aria-controls="v-pills-home"
+                                    aria-selected="true">Familiares</a>
+                                <a class="nav-link" id="v-pills-profile-tab" data-mdb-toggle="pill" href="#v-pills-2"
+                                    role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                                <a class="nav-link" id="v-pills-messages-tab" data-mdb-toggle="pill" href="#v-pills-3"
+                                    role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+                            </div>
+
+                        </div>
+                        <!-- Pills content -->
+                        <div class="col-md-9">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
+                                    aria-labelledby="ex1-tab-1">
+                                    <h1 class="text-center"><b>Familiares</b></h1>
+                                    <div class="row justify-content-center mb-4">
+                                        <div class="col-md-10 my-2">
+                                            <img class="img-fluid" src="img/rf.png" alt="">
+                                        </div>
+                                        <div class="col-12 my-4">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr class="">
+                                                            <th>RESTAURANTE</th>
+                                                            <th>DIRECCIÓN</th>
+                                                            <th>TELÉFONO</th>
+                                                            <th>Menu</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Bahareque</td>
+                                                            <td>Calle 11 N.º 7-24, San Francisco</td>
+                                                            <td>3108537636</td>
+                                                            <td><button type="button" class="btn btn-primary menu"
+                                                                    data-mdb-toggle="modal" data-mdb-target="#menumodal"
+                                                                    id="Bahareque">
+                                                                    Ver Menu
+                                                                </button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Brasa y Sabor El Llanero</td>
+                                                            <td>Carrera 8 N.º 9-77</td>
+                                                            <td>3133115480</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Capilla Marina</td>
+                                                            <td>Carrera 5 N.º 8B-29</td>
+                                                            <td>3229062574</td>
+                                                            <td><button type="button" class="btn btn-primary menu"
+                                                                    data-mdb-toggle="modal" data-mdb-target="#menumodal"
+                                                                    id="capilla marina">
+                                                                    Ver Menu
+                                                                </button></td>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Delicias del Mar</td>
+                                                            <td>Calle 6 N.º 7-60, Centro</td>
+                                                            <td>5684558 -3174695239</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Eco-Tarantin</td>
+                                                            <td>Barrio Mirador de Cristo, Manzana C, Lote 7</td>
+                                                            <td>3203037900</td>
+                                                            <td><button type="button" class="btn btn-primary menu"
+                                                                data-mdb-toggle="modal" data-mdb-target="#menumodal"
+                                                                id="eco-tarantin">
+                                                                Ver Menu
+                                                            </button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>El Norteño</td>
+                                                            <td>Av. Santander N.º 12-690</td>
+                                                            <td>3209715051</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>El Rancho del Tio</td>
+                                                            <td>Calle 7B N.º 7-46, Chapinero</td>
+                                                            <td>5681845 - 3214414384</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>El Solar</td>
+                                                            <td>Calle 5 N.º 4-19, Centro</td>
+                                                            <td>5682010 3204794488</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Hierbabuena</td>
+                                                            <td>Carrera 5 N.º 4-44, Junto al Sena</td>
+                                                            <td>5689173 - 3212881541</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Iruña Restaurante, Bar y Tradición</td>
+                                                            <td>Carrera 5 N.º 8-02/14, Segundo Piso</td>
+                                                            <td>3168969641</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Juanrry's Pollo a la Broaster</td>
+                                                            <td>Carrera 6 N.º 8-43</td>
+                                                            <td>3144419527</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>La Casa del Abuelo</td>
+                                                            <td>Carrera 0A N.º 0-32, El Buque</td>
+                                                            <td>&nbsp;</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>La Casona</td>
+                                                            <td>Calle 6 N.º 7-58, Centro</td>
+                                                            <td>3224668020</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Le Fontaine</td>
+                                                            <td>Carrera 4 N.º 4-65</td>
+                                                            <td>3204403407</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>La Pampa</td>
+                                                            <td>Calle 9 N.º 7-26</td>
+                                                            <td>3142009237</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Piroko</td>
+                                                            <td>Calle 5 N.º 5-49, Centro</td>
+                                                            <td>5683031</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Restaurante Entre Carbón y Leña</td>
+                                                            <td>Calle 5 N.º11A-54, Lote 2, Cristo Rey</td>
+                                                            <td>3213598429</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Restaurante J&R</td>
+                                                            <td>Frente a los Tanques</td>
+                                                            <td>3115115987</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Restaurante y Asadero Las Colinas</td>
+                                                            <td>Carrera 6 N.º 8B-05, Calle Real</td>
+                                                            <td>5688937 - 3134235881</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Sabor Pamplonés</td>
+                                                            <td>Calle 5 N.º 5-29, Centro</td>
+                                                            <td>5683396 - 3173059782</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Sal y Pimienta</td>
+                                                            <td>C.C Los Balcones, Local 4</td>
+                                                            <td>3178258120</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Super Deli</td>
+                                                            <td>Calle 7 N.º 6-131</td>
+                                                            <td>3209162542</td>
+                                                            <td>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Todo al Carbon</td>
+                                                            <td>Carrera 9 N.º 5-144</td>
+                                                            <td>3123260098</td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                                    Tab 2 content
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                                    Tab 3 content
+                                </div>
+                            </div>
+                            <!-- Pills content -->
+                        </div>
+                    </div>
+
+                    <!-- Pills navs -->
+
+
 
                 </div>
                 <div class="tab-pane fade" id="ex1-pills-9" role="tabpanel" aria-labelledby="ex1-tab-9">
@@ -3572,7 +3777,44 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-
+    <!-- Modal -->
+    <div class="modal fade" id="menumodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> </h5>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel">
+                        <div class="carousel-inner">
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls"
+                            data-mdb-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls"
+                            data-mdb-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                        Close
+                    </button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MDB Scripts -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script>
 
         console.log('hi');
@@ -3601,6 +3843,7 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
+
 
         $(function () {
             var maxL = 1000;
@@ -3639,6 +3882,38 @@
                 $(this).parent().parent().next().children().eq(1).attr("id", "tarifa" + index);
             });
         })
+
+
+        $('.menu').click(function () {
+            var id = $(this).attr('id');
+            $('.modal-title').text("Menu "+ id);
+            id = id.toUpperCase();            
+            $.ajax({
+                url: "img/" + id,
+                success: function (data) {
+                    var count = 0;
+                    $(data).find("a:contains(.jpg)").each(function () {
+                        count++;
+                        if (count == 1) {
+                            $('.carousel-inner').html("<div class='carousel-item active'><img src='img/" + id + "/" + id + " CARTA " + count + ".jpg" + "' class='d-block w-100' alt='...' /></div>");
+                        }
+                        $('.carousel-inner').append("<div class='carousel-item'><img src='img/" + id + "/" + id + " CARTA " + count + ".jpg" + "' class='d-block w-100' alt='...' /></div>");
+                    });
+                    console.log(count);
+                }
+            });
+        });
+
+        $.ajax({
+            url: "img/",
+            success: function (data) {
+                var count = 0;
+                $(data).find("a:contains(.png)").each(function () {
+                    count++;
+                });
+                console.log(count);
+            }
+        });
     </script>
 
 </body>
