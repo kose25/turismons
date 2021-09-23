@@ -26,3 +26,15 @@
       transform: scale(1.5);
   }
 }
+
+.nav-link.rounded-pill:hover {
+  animation: pulse infinite; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 0.5s; /* don't forget to set a duration! */
+  background-color: #39C0ED;
+  color: #fff;
+}
+
+.readmorexd:hover {
+  animation: tada infinite;
+  animation-duration: 1s;
+}

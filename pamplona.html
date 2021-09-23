@@ -12,10 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
 
@@ -26,8 +24,24 @@
 </head>
 
 <body>
+    <!-- Background image -->
+    <div class="p-5 text-center bg-image" style="
+        background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.jpg');
+        height: 200px;
+      ">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white">
+                    <h1 class="mb-3">Heading</h1>
+                    <h4 class="mb-3">Subheading</h4>
+                    <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Background image -->
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <!-- Container wrapper -->
         <div class="container-fluid">
             <!-- Toggle button -->
@@ -72,7 +86,7 @@
             </div>
             <div class="col-lg-6 align-self-center" id="mapside">
                 <!-- Card -->
-                <div class="card" id="inicio">
+                <div class="card border border-danger" id="inicio">
                     <!-- Card image -->
                     <!--<img class="card-img-top img-fluid" src="images/image1.jpg" alt="Card image cap">-->
 
@@ -82,7 +96,7 @@
                         <!-- Title -->
                         <h4 class="card-title text-center">Pamplona</h4>
                         <!-- Text -->
-                        <p class="card-text text-justify" style="font-size: 13px;">Pamplona es un municipio Colombiano,
+                        <p class="card-text">Pamplona es un municipio Colombiano,
                             ubicado en el departamento de Norte de Santander, es la capital de la Provincia de Pamplona
                             y su economía está basada en la gastronomía, la agricultura, el turismo (especialmente el
                             turismo cultural religioso) y la educación. Se le conoce como la "Ciudad Mitrada", debido a
@@ -111,44 +125,48 @@
                 <!-- Pills navs -->
                 <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link active" id="ex1-tab-1" data-mdb-toggle="pill" href="#ex1-pills-1" role="tab"
-                            aria-controls="ex1-pills-1" aria-selected="true">Museos <i class="fas fa-landmark"></i></a>
+                        <a class="nav-link active rounded-pill" id="ex1-tab-1" data-mdb-toggle="pill"
+                            href="#ex1-pills-1" role="tab" aria-controls="ex1-pills-1" aria-selected="true">Museos <i
+                                class="fas fa-landmark"></i></a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="ex1-tab-2" data-mdb-toggle="pill" href="#ex1-pills-2" role="tab"
-                            aria-controls="ex1-pills-2" aria-selected="false">Iglesias <i class="fas fa-church"></i></a>
+                        <a class="nav-link rounded-pill" id="ex1-tab-2" data-mdb-toggle="pill" href="#ex1-pills-2"
+                            role="tab" aria-controls="ex1-pills-2" aria-selected="false">Iglesias <i
+                                class="fas fa-church"></i></a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="ex1-tab-3" data-mdb-toggle="pill" href="#ex1-pills-3" role="tab"
-                            aria-controls="ex1-pills-3" aria-selected="false">Folclore <i
+                        <a class="nav-link rounded-pill" id="ex1-tab-3" data-mdb-toggle="pill" href="#ex1-pills-3"
+                            role="tab" aria-controls="ex1-pills-3" aria-selected="false">Folclore <i
                                 class="fas fa-rainbow"></i></a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="ex1-tab-4" data-mdb-toggle="pill" href="#ex1-pills-4" role="tab"
-                            aria-controls="ex1-pills-4" aria-selected="false">Espacios Urbanos <i
+                        <a class="nav-link rounded-pill" id="ex1-tab-4" data-mdb-toggle="pill" href="#ex1-pills-4"
+                            role="tab" aria-controls="ex1-pills-4" aria-selected="false">Espacios Urbanos <i
                                 class="fas fa-map-marked-alt"></i></a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="ex1-tab-5" data-mdb-toggle="pill" href="#ex1-pills-5" role="tab"
-                            aria-controls="ex1-pills-5" aria-selected="false">Espacios de Ocio <i
+                        <a class="nav-link rounded-pill" id="ex1-tab-5" data-mdb-toggle="pill" href="#ex1-pills-5"
+                            role="tab" aria-controls="ex1-pills-5" aria-selected="false">Espacios de Ocio <i
                                 class="fas fa-glasses"></i></a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="ex1-tab-6" data-mdb-toggle="pill" href="#ex1-pills-6" role="tab"
-                            aria-controls="ex1-pills-6" aria-selected="false">Ecoturismo <i class="fas fa-tree"></i></a>
+                        <a class="nav-link rounded-pill" id="ex1-tab-6" data-mdb-toggle="pill" href="#ex1-pills-6"
+                            role="tab" aria-controls="ex1-pills-6" aria-selected="false">Ecoturismo <i
+                                class="fas fa-tree"></i></a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="ex1-tab-7" data-mdb-toggle="pill" href="#ex1-pills-7" role="tab"
-                            aria-controls="ex1-pills-7" aria-selected="false">Hoteles <i class="fas fa-hotel"></i></a>
+                        <a class="nav-link rounded-pill" id="ex1-tab-7" data-mdb-toggle="pill" href="#ex1-pills-7"
+                            role="tab" aria-controls="ex1-pills-7" aria-selected="false">Hoteles <i
+                                class="fas fa-hotel"></i></a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="ex1-tab-8" data-mdb-toggle="pill" href="#ex1-pills-8" role="tab"
-                            aria-controls="ex1-pills-8" aria-selected="false">Restaurantes <i
+                        <a class="nav-link rounded-pill" id="ex1-tab-8" data-mdb-toggle="pill" href="#ex1-pills-8"
+                            role="tab" aria-controls="ex1-pills-8" aria-selected="false">Restaurantes <i
                                 class="fas fa-utensils"></i></a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="ex1-tab-9" data-mdb-toggle="pill" href="#ex1-pills-9" role="tab"
-                            aria-controls="ex1-pills-9" aria-selected="false">Transporte Terrestre <i
+                        <a class="nav-link rounded-pill" id="ex1-tab-9" data-mdb-toggle="pill" href="#ex1-pills-9"
+                            role="tab" aria-controls="ex1-pills-9" aria-selected="false">Transporte Terrestre <i
                                 class="fas fa-bus"></i></a>
                     </li>
                 </ul>
@@ -2338,7 +2356,7 @@
                             <div class="col-md-4 mb-4">
                                 <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5"
                                     data-mdb-ripple-color="light">
-                                    <img src="img/hotel3.png" class="img-fluid">
+                                    <img src="img/hotel4.png" class="img-fluid">
                                     <a href="#!">
                                         <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                                     </a>
@@ -3563,24 +3581,30 @@
                         <div class="col-md-3">
                             <div class="nav flex-column nav-pills text-center" id="v-pills-tab" role="tablist"
                                 aria-orientation="vertical">
-                                <a class="nav-link active" id="v-pills-home-tab" data-mdb-toggle="pill"
+                                <a class="nav-link active rounded-pill" id="v-pills-home-tab" data-mdb-toggle="pill"
                                     href="#v-pills-1" role="tab" aria-controls="v-pills-home"
                                     aria-selected="true">Familiares</a>
-                                <a class="nav-link" id="v-pills-profile-tab" data-mdb-toggle="pill" href="#v-pills-2"
-                                    role="tab" aria-controls="v-pills-profile" aria-selected="false">Comidas Rapidas</a>
-                                <a class="nav-link" id="v-pills-messages-tab" data-mdb-toggle="pill" href="#v-pills-3"
-                                    role="tab" aria-controls="v-pills-messages" aria-selected="false">Cafeterias &
+                                <a class="nav-link rounded-pill" id="v-pills-profile-tab" data-mdb-toggle="pill"
+                                    href="#v-pills-2" role="tab" aria-controls="v-pills-profile"
+                                    aria-selected="false">Comidas Rapidas</a>
+                                <a class="nav-link rounded-pill" id="v-pills-messages-tab" data-mdb-toggle="pill"
+                                    href="#v-pills-3" role="tab" aria-controls="v-pills-messages"
+                                    aria-selected="false">Cafeterias &
                                     Bar</a>
-                                <a class="nav-link" id="v-pills-china-tab" data-mdb-toggle="pill" href="#v-pills-4"
-                                    role="tab" aria-controls="v-pills-china" aria-selected="false">Cocina China</a>
-                                <a class="nav-link" id="v-pills-fusion-tab" data-mdb-toggle="pill" href="#v-pills-5"
-                                    role="tab" aria-controls="v-pills-fusion" aria-selected="false">Restaurantes
+                                <a class="nav-link rounded-pill" id="v-pills-china-tab" data-mdb-toggle="pill"
+                                    href="#v-pills-4" role="tab" aria-controls="v-pills-china"
+                                    aria-selected="false">Cocina China</a>
+                                <a class="nav-link rounded-pill" id="v-pills-fusion-tab" data-mdb-toggle="pill"
+                                    href="#v-pills-5" role="tab" aria-controls="v-pills-fusion"
+                                    aria-selected="false">Restaurantes
                                     Fusion</a>
-                                <a class="nav-link" id="v-pills-vg-tab" data-mdb-toggle="pill" href="#v-pills-6"
-                                    role="tab" aria-controls="v-pills-vg" aria-selected="false">Restaurantes
+                                <a class="nav-link rounded-pill" id="v-pills-vg-tab" data-mdb-toggle="pill"
+                                    href="#v-pills-6" role="tab" aria-controls="v-pills-vg"
+                                    aria-selected="false">Restaurantes
                                     Vegetarianos</a>
-                                <a class="nav-link" id="v-pills-pnd-tab" data-mdb-toggle="pill" href="#v-pills-7"
-                                    role="tab" aria-controls="v-pills-pnd" aria-selected="false">Panaderias</a>
+                                <a class="nav-link rounded-pill" id="v-pills-pnd-tab" data-mdb-toggle="pill"
+                                    href="#v-pills-7" role="tab" aria-controls="v-pills-pnd"
+                                    aria-selected="false">Panaderias</a>
                             </div>
 
                         </div>
@@ -3610,7 +3634,8 @@
                                                             <td>Bahareque</td>
                                                             <td>Calle 11 N.º 7-24, San Francisco</td>
                                                             <td>3108537636</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="Bahareque">
                                                                     Ver Menu
@@ -3626,7 +3651,8 @@
                                                             <td>Capilla Marina</td>
                                                             <td>Carrera 5 N.º 8B-29</td>
                                                             <td>3229062574</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="capilla marina">
                                                                     Ver Menu
@@ -3643,7 +3669,8 @@
                                                             <td>Eco-Tarantin</td>
                                                             <td>Barrio Mirador de Cristo, Manzana C, Lote 7</td>
                                                             <td>3203037900</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="eco-tarantin">
                                                                     Ver Menu
@@ -3653,7 +3680,8 @@
                                                             <td>El Norteño</td>
                                                             <td>Av. Santander N.º 12-690</td>
                                                             <td>3209715051</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="el norteño">
                                                                     Ver Menu
@@ -3663,7 +3691,8 @@
                                                             <td>El Rancho del Tio</td>
                                                             <td>Calle 7B N.º 7-46, Chapinero</td>
                                                             <td>5681845 - 3214414384</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="el_rancho_del_tio">Ver Menu</button></td>
                                                         </tr>
@@ -3671,7 +3700,8 @@
                                                             <td>El Solar</td>
                                                             <td>Calle 5 N.º 4-19, Centro</td>
                                                             <td>5682010 3204794488</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="el_solar">Ver Menu</button></td>
                                                         </tr>
@@ -3679,7 +3709,8 @@
                                                             <td>Hierbabuena</td>
                                                             <td>Carrera 5 N.º 4-44, Junto al Sena</td>
                                                             <td>5689173 - 3212881541</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="hierbabuena">Ver Menu</button></td>
                                                         </tr>
@@ -3687,7 +3718,8 @@
                                                             <td>Iruña Restaurante, Bar y Tradición</td>
                                                             <td>Carrera 5 N.º 8-02/14, Segundo Piso</td>
                                                             <td>3168969641</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="iruña_restaurante_bar_y_tradicion">Ver
                                                                     Menu</button></td>
@@ -3708,7 +3740,8 @@
                                                             <td>La Casona</td>
                                                             <td>Calle 6 N.º 7-58, Centro</td>
                                                             <td>3224668020</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="la_casona">Ver Menu</button></td>
                                                         </tr>
@@ -3722,7 +3755,8 @@
                                                             <td>La Pampa</td>
                                                             <td>Calle 9 N.º 7-26</td>
                                                             <td>3142009237</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="la_pampa">Ver Menu</button></td>
                                                         </tr>
@@ -3742,7 +3776,8 @@
                                                             <td>Restaurante J&R</td>
                                                             <td>Frente a los Tanques</td>
                                                             <td>3115115987</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="j&r">Ver Menu</button></td>
                                                         </tr>
@@ -3756,7 +3791,8 @@
                                                             <td>Sabor Pamplonés</td>
                                                             <td>Calle 5 N.º 5-29, Centro</td>
                                                             <td>5683396 - 3173059782</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="sabor_pamplones">Ver Menu</button></td>
                                                         </tr>
@@ -3812,7 +3848,8 @@
                                                             <td>Chef Nixon Fast Food & Grill</td>
                                                             <td>Calle 9 N.º 7-65, El Topon</td>
                                                             <td>3188894983</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="Chef_Nixon_Fast_Food_&_Grill">Ver Menu</button>
                                                             </td>
@@ -3821,7 +3858,8 @@
                                                             <td>Comidas Rápidas Betos</td>
                                                             <td>Carrera 6 N.º 6-1, Calle Real</td>
                                                             <td>3204550654</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="comidas_rapidas_beto">Ver Menu</button></td>
                                                         </tr>
@@ -3829,7 +3867,8 @@
                                                             <td>Crivan Fast Food</td>
                                                             <td>Carrera 6 N.º 7-64, Calle Real</td>
                                                             <td>3134100062</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="crivan_fast_food">Ver Menu</button></td>
                                                         </tr>
@@ -3837,7 +3876,8 @@
                                                             <td>Food Imperial</td>
                                                             <td>Carrera 6 N.º 7-60, Segundo Piso</td>
                                                             <td>3156139645</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="food_imperial">Ver Menu</button></td>
                                                         </tr>
@@ -3845,7 +3885,8 @@
                                                             <td>Gerónimos Pizzeria</td>
                                                             <td>Carrera 7 N.º 10-57</td>
                                                             <td>3144804098</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="geronimos_pizza">Ver Menu</button></td>
                                                         </tr>
@@ -3853,7 +3894,8 @@
                                                             <td>Ginger Bistro</td>
                                                             <td>Carrera 5 N.º 2-67</td>
                                                             <td>3112574610</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="ginger_bistro">Ver Menu</button></td>
                                                         </tr>
@@ -3861,7 +3903,8 @@
                                                             <td>Hamburguesas Garfield</td>
                                                             <td>Carrera 7 N.º 1C-73</td>
                                                             <td>5680393 - 3144481205</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="hamburguesas_garfield">Ver Menu</button></td>
                                                         </tr>
@@ -3875,7 +3918,8 @@
                                                             <td>Hamburgueseria Manolitos</td>
                                                             <td>Plazuela Almeyda</td>
                                                             <td>3227734307</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="hamburgueseria_manolitos">Ver Menu</button></td>
                                                         </tr>
@@ -3883,7 +3927,8 @@
                                                             <td>Kantaros Fast Food</td>
                                                             <td>Calle 5 N.º 8-31</td>
                                                             <td>3117671001</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="kantaros">Ver Menu</button></td>
                                                         </tr>
@@ -3891,7 +3936,8 @@
                                                             <td>Kiffer</td>
                                                             <td>C.C Los Balcones, Local 6</td>
                                                             <td>3127057068</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="kiffer">Ver Menu</button></td>
                                                         </tr>
@@ -3899,7 +3945,8 @@
                                                             <td>Mission Picnic</td>
                                                             <td>Carrera 8 N.º 8A-83, La Feria</td>
                                                             <td>3124705303</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="mission_picnic">Ver Menu</button></td>
                                                         </tr>
@@ -3919,7 +3966,8 @@
                                                             <td>Pieros Pizza</td>
                                                             <td>Carrera 5 N.º 8B-67</td>
                                                             <td>3156701706</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="pieros_pizza">Ver Menu</button></td>
                                                         </tr>
@@ -3927,7 +3975,8 @@
                                                             <td>Piper's Comidas Rapidas</td>
                                                             <td>Carrera 7 N.º 6-27</td>
                                                             <td>3118480115</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="pipers">Ver Menu</button></td>
                                                         </tr>
@@ -3935,7 +3984,8 @@
                                                             <td>Rapifood</td>
                                                             <td>C.C Los Balcones, Local 4</td>
                                                             <td>3008814126</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="pipers">Ver Menu</button></td>
                                                         </tr>
@@ -3943,7 +3993,8 @@
                                                             <td>Ticos</td>
                                                             <td>Carrera 7 N.º 7-1</td>
                                                             <td>3207090924</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="ticos">Ver Menu</button></td>
                                                         </tr>
@@ -3981,7 +4032,8 @@
                                                             <td>Cafe Real</td>
                                                             <td>Carrera 6 N.º 8-06, Los Balcones</td>
                                                             <td>3126384946</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="cafe_real">Ver Menu</button></td>
                                                         </tr>
@@ -3995,7 +4047,8 @@
                                                             <td>London Coffee</td>
                                                             <td>Carrera 6 N.º 8-20, C.C Los Balcones, Local 3</td>
                                                             <td>5680034 - 3156127628</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="london_coffee_bar">Ver Menu</button></td>
                                                         </tr>
@@ -4003,7 +4056,8 @@
                                                             <td>Mi Cafetal</td>
                                                             <td>Carrera 6 N.º 8-43, Calle Real</td>
                                                             <td>3132236769</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="mi_cafetal">Ver Menu</button></td>
                                                         </tr>
@@ -4035,7 +4089,8 @@
                                                             <td>Anónimos Sushi & Wok</td>
                                                             <td>Carrera 6 N.º 8-22, C.C Los Balcones, Local 7</td>
                                                             <td>5682372 - 3203828399</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="anonimos_sushi_&_wok">Ver Menu</button></td>
                                                         </tr>
@@ -4043,7 +4098,8 @@
                                                             <td>Asia Fusion</td>
                                                             <td>Calle 6 N.º 7-32, Centro</td>
                                                             <td>3178860950</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="asia_fusion">Ver Menu</button></td>
                                                         </tr>
@@ -4051,7 +4107,8 @@
                                                             <td>Bamboo Sabor Oriental</td>
                                                             <td>Carrera 5 OE N.º 8B-58</td>
                                                             <td>3186163586</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="bamboo_sabor_oriental">Ver Menu</button></td>
                                                         </tr>
@@ -4083,7 +4140,8 @@
                                                             <td>Kebab</td>
                                                             <td>Calle 6 N.º 7-17, Centro</td>
                                                             <td>3213597906</td>
-                                                            <td><button type="button" class="btn btn-primary menu"
+                                                            <td><button type="button"
+                                                                    class="btn btn-primary btn-rounded menu"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="kebab">Ver Menu</button></td>
                                                         </tr>
@@ -4116,7 +4174,7 @@
                                                             <td>Carrera 3B N.º 1C-26, Las Americas </td>
                                                             <td>3132142008</td>
                                                             <td><button type="button"
-                                                                    class="btn btn-primary menu disabled"
+                                                                    class="btn btn-primary btn-rounded menu disabled"
                                                                     data-mdb-toggle="modal" data-mdb-target="#menumodal"
                                                                     id="kebab">Ver Menu</button></td>
                                                         </tr>
@@ -4460,7 +4518,7 @@
                     $(this).html(begin)
                         //.append($('<a class="readmore"/>').attr('href', '#').html('read more...'))
                         .append($('<span class="hidden" />').html(end))
-                        .after("<button type='button' class='btn btn-primary readmorexd'>MOSTRAR MAS</button>");
+                        .after("<button type='button' class='btn btn-primary btn-rounded readmorexd'>MOSTRAR MAS</button>");
 
                 }
             });
