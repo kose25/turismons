@@ -30,11 +30,56 @@
 .nav-link.rounded-pill:hover {
   animation: pulse infinite; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 0.5s; /* don't forget to set a duration! */
-  background-color: #39C0ED;
+  background-color: #FF5252;
   color: #fff;
 }
 
 .readmorexd:hover {
   animation: tada infinite;
   animation-duration: 1s;
+}
+
+.corporative-red{
+  background-color: #D50000!important;
+}
+
+.border-corporative {
+  border-color: #D50000!important;
+}
+
+.btn-primary {
+  background-color: #D50000!important;
+}
+
+.nav-link.active{
+  background-color: #D50000!important;
+}
+
+body {
+  color: #000000!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.text-secondary {
+  color: #AD1457!important;
+}
+
+.text-info {
+  color: #283593!important;
+}
+
+.text-danger {
+  color: #C62828!important;
+}
+
+.text-warning {
+  color: #F9A825!important;
+}
+
+
+body {
+  background-color: #FAFAFA !important;
 }
