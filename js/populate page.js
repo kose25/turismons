@@ -19,7 +19,7 @@ request.onload = function () {
 }
 
 function loadMuseos(jsonObj) {
-    
+
     for (let index = 0; index < jsonObj.length; index++) {
         var doc = parser.parseFromString(htmlString, 'text/html');
         var realDoc = doc.body.firstChild;
@@ -45,6 +45,7 @@ function loadMuseos(jsonObj) {
 
 }
 
-function loadIglesias(){
-    
+function loadIglesias() {
+
 }
+
