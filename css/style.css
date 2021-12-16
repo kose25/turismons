@@ -10,10 +10,10 @@
   .image7 {
     position: absolute;
     top: 73%;
-    left: 56%;
+    left: 56%;  
 }
 
-.efecto:hover img {
+.efecto img {
   /*	transform: scale(1.5);*/
   /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   /*	transition: transform .2s;*/
@@ -82,4 +82,22 @@ body {
 
 body {
   background-color: #FAFAFA !important;
+}
+
+.w3-animate-zoom {animation:animatezoom 1s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+
+.w3-animate-opacity{animation:opac 1s}@keyframes opac{from{opacity:0} to{opacity:1}}
+
+.fade-in {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
