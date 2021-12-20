@@ -13,6 +13,10 @@
     left: 56%;  
 }
 
+.opacity-85 {
+  opacity: .85!important;
+}
+
 .efecto img {
   /*	transform: scale(1.5);*/
   /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
